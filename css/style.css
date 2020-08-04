@@ -12,22 +12,23 @@ body * {
 
 .hero-logo {
   text-align: center;
-  margin-top: 180px;
+  margin-top: 150px;
 }
 
 .hero-logo img {
-  width: 750px;
+  width: 450px;
 }
 
 .headlainer {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .headlainer h1 {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 .headlainer p {
@@ -47,12 +48,13 @@ body * {
 }
 
 .address-block {
-  position: fixed;
-  bottom: 0;
+  display: inline-block;
+  margin-top: 120px;
   width: 1200px;
   margin-left: calc(50% - 580px);
   margin-bottom: 70px;
   display: flex;
+  font-size: 16px;
 }
 
 .estonia,
@@ -71,6 +73,7 @@ body * {
   .address-block {
     width: 800px;
     margin-left: calc(50% - 380px);
+    text-align: center;
   }
 }
 
@@ -78,13 +81,19 @@ body * {
   .address-block {
     width: 600px;
     margin-left: calc(50% - 280px);
+    text-align: center;
   }
 }
 
 @media (max-width: 600px) {
+  .headlainer {
+    margin-left: 90px;
+  }
+
   .address-block {
     width: 400px;
-    margin-left: calc(50% -180px);
+    margin-left: 90px;
+    text-align: center;
   }
 }
 
@@ -92,5 +101,7 @@ body * {
   .address-block {
     width: 200px;
     margin-left: calc(50% - 80px);
+    text-align: center;
+    margin-left: 70px;
   }
 }
